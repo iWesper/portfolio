@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Days_One, Poppins } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
-  title: "Luís Costa's Portfolio",
+  title: "Luís Costa",
   description: "Me, if I was a website.",
 };
 
@@ -24,7 +26,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins_init.className}`}>{children}</body>
+      <body className={`${poppins_init.className}`}>{children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
