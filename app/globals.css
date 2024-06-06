@@ -7,9 +7,21 @@
     height: 24px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 1280px) {
     .icon {
         width: 48px;
         height: 48px;
     }
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #FAF2E7;
 }
