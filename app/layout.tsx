@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Days_One, Poppins } from "next/font/google";
 import "./globals.css";
+import Logo from "@/components/Logo";
 
 export const metadata: Metadata = {
   title: "Luís Costa's Portfolio",
@@ -24,7 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins_init.className}`}>{children}</body>
+      <body className={`${poppins_init.className} bg-[#FAF2E7]`}>
+        <main className="min-h-screen flex flex-col justify-center items-center bg-white-100 overflow-hidden transition-all mx-auto sm:px-10 px-5">
+          <Logo />
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
