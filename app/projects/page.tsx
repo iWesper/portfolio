@@ -21,8 +21,7 @@ export default function Projects() {
           />
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-11/12 md:w-3/4 lg:w-1/2 mx-auto py-10 md:py-40 h-full">
-        <Logo />
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-11/12 md:w-3/4 lg:w-1/2 mx-auto py-10 h-full justify-start">
         <h1
           className={`${days_one_init.className} col-span-12 text-4xl md:text-6xl text-white-100 bg-primary hover:text-secondary transition-colors p-4 rounded-xl overflow-hidden group flex flex-col justify-center items-center`}
         >
