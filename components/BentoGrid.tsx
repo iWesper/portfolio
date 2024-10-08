@@ -7,6 +7,7 @@ import {
   SiUnity,
   SiFigma,
   SiReact,
+  SiCsharp,
 } from "react-icons/si";
 import { FaArrowRight, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import Logo from "./Logo";
