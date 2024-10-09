@@ -1,4 +1,3 @@
-import Logo from "@/components/Logo";
 import ProjectGrid from "@/components/ProjectGrid";
 import { projectData } from "@/data";
 import { FaArrowLeft } from "react-icons/fa";
@@ -12,21 +11,23 @@ const days_one_init = Days_One({
 
 export default function Projects() {
   return (
-    <main className="h-full flex flex-col md:flex-row justify-center items-start md:items-center bg-white-100 overflow-auto mx-auto sm:px-10 px-5">
-      <div className="self-start my-4 md:fixed md:top-4 md:left-4 bg-primary rounded-xl p-4">
-        <Link href="/">
-          <FaArrowLeft
-            size={48}
-            className="hover:text-tertiary text-white-100"
-          />
-        </Link>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-11/12 md:w-3/4 lg:w-1/2 mx-auto py-10 h-full justify-start">
-        <h1
-          className={`${days_one_init.className} col-span-12 text-4xl md:text-6xl text-white-100 bg-primary hover:text-secondary transition-colors p-4 rounded-xl overflow-hidden group flex flex-col justify-center items-center`}
-        >
-          Projects
-        </h1>
+    <main className="min-h-full flex flex-col md:flex-row justify-center items-start md:items-center bg-white-100 overflow-auto mx-auto sm:px-10 px-5">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-11/12 md:w-3/4 lg:w-1/2 mx-auto my-2 h-full justify-start">
+        <div className="col-span-12 flex flex-row bg-primary rounded-xl p-4">
+          <div className="self-start my-4">
+            <Link href="/">
+              <FaArrowLeft
+                size={48}
+                className="hover:text-secondary text-white-100 transition-all"
+              />
+            </Link>
+          </div>
+          <h1
+            className={`${days_one_init.className} mx-auto text-4xl md:text-6xl text-white-100 hover:text-secondary transition-colors overflow-hidden group flex flex-col justify-center items-center`}
+          >
+            Projects
+          </h1>
+        </div>
         {projectData.map((project) => (
           <ProjectGrid
             key={project.id}
@@ -34,6 +35,9 @@ export default function Projects() {
             img={project.img}
             title={project.title}
             description={project.description}
+            link={project.link}
+            roles={project.roles}
+            techStack={project.techStack}
           />
         ))}
       </div>

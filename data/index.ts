@@ -1,21 +1,57 @@
 export const projectData = [
   {
     id: 1,
-    title: "Chronos",
-    img: "/Project_Chronos.png",
+    title: "Trilhos Digitais",
+    img: "/Project_TrilhosDigitais.png",
     description:
-      "In the context of a university project, me and 3 other colleagues developed an interactive web application that allows users to experience and understand the history of the universe. For this, we used HTML, CSS, JavaScript, particles.js and Animate-on-scroll.js libraries. "
+      "Built an interactive experience on the history of multimedia using Next.js and 3D/AR libraries.",
+    link: "https://trilhosdigitais.vercel.app/",
+    roles: ["Front-End Developer", "UI/UX Designer"],
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Firebase",
+      "React Three Fiber",
+      "React XR",
+      "Framer Motion",
+    ],
   },
   {
     id: 2,
     title: "F1 Dash",
     img: "/Project_F1Dash.png",
-    description: "F1 Dash was a solo project fully developed with React.js and a handful of APIs (Youtube API, ErgastF1 API, Firebase, WorldWeatherOnline, News API and Wikipedia API). It is a web application that allows users to check the info of the current F1 season, such as the next race's predicted weather conditions, the current driver/constructor standings, the latest news and videos on the F1 youtube channel, while allowing the user to favorite drivers and analyze their career stats."
+    description:
+      "Created a React.js web app to track F1 season info, including weather, standings, news, and videos, using multiple APIs.",
+    link: "https://f1dash.vercel.app/",
+    roles: ["Front-End Developer", "UI/UX Designer"],
+    techStack: [
+      "React.js",
+      "JavaScript",
+      "Bootstrap",
+      "Firebase",
+      "REST APIs",
+      "Axios",
+      "Leaflet",
+    ],
   },
   {
     id: 3,
     title: "Lift-Off",
     img: "/Project_LiftOff.png",
-    description: "Lift-Off is a 2D game made in collaboration with Planetário do Porto. It was developed in Unity and C# and is a game that aims to teach kids about the dynamics of space exploration. The game is divided into 3 levels, each one with a different objective and minigames that the player must complete in order to progress. "
+    description:
+      "Developed a 2D educational game in Unity and C# to teach kids about space exploration, in collaboration with Planetário do Porto.",
+    link: "https://simoh3945.itch.io/lift-off-an-astronauts-journey",
+    roles: ["Lead Gameplay Programmer", "Game Designer"],
+    techStack: ["Unity", "C#"],
+  },
+  {
+    id: 4,
+    title: "Chronos",
+    img: "/Project_Chronos.png",
+    description:
+      "Developed an interactive web app to explore the history of the universe using HTML, CSS, JavaScript, particles.js, and Animate-on-scroll.js.",
+    roles: ["Front-End Developer", "UI/UX Designer"],
+    techStack: ["HTML", "CSS", "JavaScript"],
   },
 ];
