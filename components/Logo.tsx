@@ -7,13 +7,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import Link from "next/link";
 
 const Logo = () => {
   return (
-    <div className="col-span-12 w-11/12 md:w-3/4 lg:w-1/2 text-[#FAF2E7] bg-[#FAF2E7] p-4 rounded-lg overflow-hidden group flex flex-col justify-center items-center transition-all">
+    <Link href="/" className="col-span-12 w-11/12 md:w-3/4 lg:w-1/2 text-[#FAF2E7] bg-[#FAF2E7] p-4 rounded-lg overflow-hidden group flex flex-col justify-center items-center transition-all">
       <TooltipProvider delayDuration={150}>
         <Tooltip>
-          <TooltipTrigger className="items-center cursor-default">
+          <TooltipTrigger className="items-center">
             <Image
               className="mx-auto"
               src={logo}
@@ -26,7 +27,7 @@ const Logo = () => {
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>
-    </div>
+    </Link>
   );
 };
 

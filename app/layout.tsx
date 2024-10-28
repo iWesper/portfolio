@@ -4,7 +4,7 @@ import "./globals.css";
 import Logo from "@/components/Logo";
 
 export const metadata: Metadata = {
-  title: "Luís Costa",
+  title: "Luís Costa's Portfolio",
   description: "Me, if I was a website.",
 };
 

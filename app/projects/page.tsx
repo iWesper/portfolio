@@ -12,7 +12,7 @@ const days_one_init = Days_One({
 export default function Projects() {
   return (
     <main className="min-h-full flex flex-col md:flex-row justify-center items-start md:items-center bg-white-100 overflow-auto mx-auto sm:px-10 px-5">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-11/12 md:w-3/4 lg:w-1/2 mx-auto my-2 h-full justify-start">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 w-11/12 md:w-3/4 lg:w-3/5 mx-auto my-2 h-full justify-start">
         <div className="col-span-12 flex flex-row bg-primary rounded-xl p-4">
           <div className="self-start my-4">
             <Link href="/">
